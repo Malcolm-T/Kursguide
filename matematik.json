@@ -1,0 +1,62 @@
+[
+  {
+    "titel": "Matematik 1a",
+    "beskrivning": "Gymnasiegemensam kurs. Ingår bland annat på Yrkesprogrammen.",
+    "poäng": 100,
+    "nivå": "Grundläggande"
+  },
+  {
+    "titel": "Matematik 1b",
+    "beskrivning": "Gymnasiegemensam kurs. Ingår bland annat på Ekonomi, Estet, Humanist och Samhällsvetenskapsprogrammet.",
+    "poäng": 100,
+    "nivå": "Grundläggande"
+  },
+  {
+    "titel": "Matematik 1c",
+    "beskrivning": "Gymnasiegemensam kurs. Ingår på Naturvetenskap och Teknikprogrammet.",
+    "poäng": 100,
+    "nivå": "Grundläggande"
+  },
+  {
+    "titel": "Matematik 2a",
+    "beskrivning": "Kursen tar upp hur man gör en budget, hur man löser matematiska problem och fördjupar kunskaperna inom aritmetik och trigonometri. Kursen introducerar även funktioner och öppnar därmed dörren till den matematiska analysen.",
+    "poäng": 100,
+    "nivå": "Medel (Bygger på 1a)"
+  },
+  {
+    "titel": "Matematik 2b",
+    "beskrivning": "Du får fördjupade kunskaper om linjära funktioner och andragradsfunktioner och utvecklar din förmåga att hantera algebraiska uttryck. Du lär dig lösa linjära ekvationssystem, andragradsekvationer och exponentialekvationer. Vi introducerar komplexa tal och logaritmer.",
+    "poäng": 100,
+    "nivå": "Medel (Bygger på 1b)"
+  },
+  {
+    "titel": "Matematik 2c",
+    "beskrivning": "Gymnasiegemensam kurs med fokus på naturvetenskapliga och tekniska tillämpningar. Ingår på NA och TE.",
+    "poäng": 100,
+    "nivå": "Medel (Bygger på 1c)"
+  },
+  {
+    "titel": "Matematik 3b",
+    "beskrivning": "Hur många enheter ska du tillverka av din produkt för att din vinst ska bli så stor som möjligt? Funktionsläran fördjupas till att omfatta derivata och integraler, vilket ger dig verktyg för att analysera när en matematiskt funktion får sitt största värde. Kräver goda förkunskaper inom algebra.",
+    "poäng": 100,
+    "nivå": "Avancerad (Bygger på 2a eller 2b)"
+  },
+  {
+    "titel": "Matematik 3c",
+    "beskrivning": "Fortsättningskurs för NA och TE. Innehåller fördjupad analys, derivata och integralkalkyl.",
+    "poäng": 100,
+    "nivå": "Avancerad (Bygger på 2c)"
+  },
+  {
+    "titel": "Matematik 4",
+    "beskrivning": "Vi fördjupar oss i trigonometri, derivata och integraler. Vi introducerar komplexa talplanet och olika sätt att representera och räkna med komplexa tal. Vi lär oss polynomdivision för att lösa ekvationer av högre grad samt jobbar med matematisk bevisföring.",
+    "poäng": 100,
+    "nivå": "Avancerad (Bygger på 3b eller 3c)"
+  },
+  {
+    "titel": "Matematik 5",
+    "beskrivning": "På hur många sätt kan man placera dina tio middagsgäster vid ett runt bord? I denna kurs fördjupar du dina kunskaper om derivata och integraler ytterligare och lär dig lösa enkla differentialekvationer. Här introduceras du till den diskreta matematiken och lär dig om kombinationer, permutationer och grafteori.",
+    "poäng": 100,
+    "nivå": "Avancerad (Bygger på 4)"
+  }
+]
