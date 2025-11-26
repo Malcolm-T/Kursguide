@@ -1,0 +1,284 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+
+}
+
+h1, h2, h3, .course-title {
+    font-weight: 800; /* fetare rubriker */
+}
+
+
+
+/* länkar till andra sidor */
+
+    #sida1{
+        text-decoration: none;
+        color: rgba(241, 241, 241, 0.925);
+        float: left;
+        margin-left: 20%;
+    }
+
+    #sida2{
+        text-decoration: none;
+        color: rgba(241, 241, 241, 0.925);
+        margin-left: 50%;
+    }
+
+    #sida3{
+        text-decoration: none;
+        color: rgba(241, 241, 241, 0.925);
+        margin-right: 20%;
+        float: right;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+#hero{
+    display:block;
+    background-color: rgba(176, 30, 56);
+    align-content: center;
+    border-radius: 10px;
+}
+
+#headline{
+    padding: 10%;
+    font-size: 300%;
+    color: white; 
+    text-align: center;
+}
+
+
+    /* Top navigation links inside the hero. Use inline-blocks and center them. */
+
+    #sida1, #sida2, #sida3 {
+        text-decoration: none;
+        color: rgba(241, 241, 241, 0.925);
+        display: inline-block;
+        float: none; /* override previous floats */
+        vertical-align: middle;
+        margin: 0 clamp(5rem, 2vw, 5rem); /* horizontal spacing */
+        padding-bottom: 3rem;
+
+    }
+
+    /* Center the link group inside the hero */
+    #hero {
+        text-align: center;
+    }
+    #hero p{
+    font-size: 30px;
+    margin-top: 0%;
+    opacity: 75%;
+    font-weight: 100;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+    /* Make the li inside the link boxes inline so text doesn't force block layout */
+    #sida1 > li, #sida2 > li, #sida3 > li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+#hero h1{
+    margin-bottom: 3%;
+    font-size: clamp(3rem, 6vw, 6rem);
+}
+
+#tile{
+    display: block - inline;
+    width: 20%;
+    margin:5%;
+}
+
+
+h3{
+    font-size: 55%;
+}
+
+.kurstext{
+    font-size: 70%;
+    padding: 10%;
+    padding-top: 0%;
+}
+
+#sökdiv{
+ margin-top: clamp(4px, 10px, 12px);
+}
+
+#search{
+
+    width: 50%;
+    height: 10%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    resize: none;
+    overflow-y: hidden;
+
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* Category Row */
+.category-row {
+    margin: 40px 0;
+}
+
+.category-row h2 {
+    margin-left: 30px;
+    font-size: 2rem;
+    color: #B01E38;
+    margin: 0px;
+}
+
+/* Horizontal Scroll Container */
+.course-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 20px 30px;
+    scroll-behavior: smooth;
+    
+}
+
+.course-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+.course-scroll::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+/* Course Card */
+.course-card {
+    min-width: 250px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    padding: 20px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition-property: background;
+    transition-duration: 350ms;
+    transition-timing-function: ease;
+    z-index: 1;
+
+    /* Förhindrar textmarkering */
+    -webkit-user-select: none; 
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    user-select: none;
+}
+.course-card:hover{
+    background: #B01E38;
+    color:#dbdbdb;
+}
+
+.course-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #B01E38;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+.course-card:hover .course-title{
+    color:#ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+/* Desktop: hide native horizontal scrolling and show arrows/drag behavior */
+@media (min-width: 769px) {
+  .course-scroll {
+    overflow-x: hidden; /* prevent mouse-wheel native horizontal scroll */
+    cursor: grab;
+  }    .course-scroll.dragging {
+        cursor: grabbing;
+    }
+
+    .category-row {
+        position: relative; /* for absolutely positioned scroll buttons */
+    }
+
+  .scroll-btn {
+    position: absolute;
+    top: 65%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(176,30,56,0.95);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    cursor: pointer;
+    z-index: 10;
+    transition: opacity 160ms ease;
+  }    .scroll-btn.left {
+        left: 0;
+    }
+
+    .scroll-btn.right {
+        right: 0;
+    }
+
+    /* Hidden state when there's nothing to scroll */
+    .scroll-btn.hidden {
+        display: none;
+    }
+
+  /* Disabled state when at start/end */
+  .scroll-btn[disabled] {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Ensure buttons don't block card clicks when hidden */
+  .scroll-btn.hidden {
+    pointer-events: none; /*Onödig*/
+  }
+    .course-scroll::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+/* Mobile: make sure buttons are hidden and native scrolling is enabled */
+@media (max-width: 768px) {
+    .scroll-btn { display: none; }
+    .course-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+}
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/test.css">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-jQGZz6xN+dOeI1YHjMvzflv8oVhXz8lAqK0HyF13d+MZ++7k7zFvKTrG8Y6fTPW0FVbT7eF/zB3Vw1u2exKxwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,800;1,6..12,800&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;1,6..12,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class = helasidan>
+        <div class = headdiv>
+            <h1>Skriv en recension</h1>
+        </div>
+        <div class = action>
+            <textarea type="text" name="recension" id="skrivyta">Skriv en rescension</textarea>
+
+            <!--Auto autoResize"-->
+            <script>
+                const textarea = document.getElementById("skrivyta");
+              
+                textarea.addEventListener("input", function () {
+                  this.style.height = "auto"; // reset height
+                  this.style.height = this.scrollHeight + "px"; // adjust to content
+                });
+              </script>
+
+              <button id = läggupp>Lägg upp</button>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+/*Popup*/
+.action{
+    border-radius: 10px;
+    text-align: left;
+    padding: clamp(2rem, 2vw, 3rem);
+    padding-top: clamp(5px, 10px, 3rem);
+    display: inline-block;
+    /* background: #b01e3980; */
+}
+.action h2{
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color:#b01e39;
+}
+
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    overflow-y: hidden;
+
+
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+    
+}
+
+#läggupp{
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color: #B01E38;
+    color: #fff;
+    padding: 7px 15px;
+    cursor: pointer;
+    margin: 10px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    
+}
+
+.form-popup.active {
+    display: flex;
+    opacity: 1;
+  }
+
+/* Popup-formuläret (centrerat och dolt från start) */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    width: clamp(80%, 70%, 60%);
+    background-color: #fff;
+    z-index: 9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    opacity: 0;
+    transform: translate(-50%,60%);
+    transition: opacity 0.3ms ease, tranform 0.3ms ease;
+
+    /* New properties for scrollability */
+    max-height: 90vh; /* Set a maximum height (e.g., 90% of viewport height) */
+    overflow-y: auto; /* Show a vertical scrollbar when content exceeds max-height */
+    
+    /* Center the popup better with the new height */
+    bottom: auto; /* Remove fixed bottom setting */
+    top: 50%; /* Position top edge at 50% */
+    transform: translate(-50%, -50%); /* Adjust to truly center */
+  }
+
+  
+.info{
+    /* background: #b01e3980; */
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px 0px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.027);
+}
+
+
+.breadtext {
+    font-weight: 400; /* eller 400 om du vill ha normalvikt */
+    line-height: 1.6; /* valfritt, men gör texten lättare att läsa */
+    font-size: 1rem;  /* justera storleken om du vill */
+    color: #333;   /* valfri färg, mjukare än svart */
+    border-radius: 10px;
+    margin-top: 0px;
+
+}
+
+.reviews {
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    /* background: #b01e3980; */
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.027);
+}
+
+.reviews h4{
+    margin: 0;
+}
+.reviews p{
+    margin-top: 4px;
+}
+
+.review{
+    font-weight: 400; /* eller 400 om du vill ha normalvikt */
+    line-height: 1.6; /* valfritt, men gör texten lättare att läsa */
+    font-size: 1rem;  /* justera storleken om du vill */
+    color: #333;   /* valfri färg, mjukare än svart */
+    /* box-shadow: 0 4px 16px rgba(0,0,0,0.12); */
+    border-radius: 0px;
+    margin: 15px 0px;
+    padding: 10px;
+    text-align: left;
+    /* background: #b01e3980; */
+    margin-top: 0px;
+    border-bottom: 1px solid #ccc;
+}
+
+.bottomreview{
+    font-weight: 400; /* eller 400 om du vill ha normalvikt */
+    line-height: 1.6; /* valfritt, men gör texten lättare att läsa */
+    font-size: 1rem;  /* justera storleken om du vill */
+    color: #333;   /* valfri färg, mjukare än svart */
+    /* box-shadow: 0 4px 16px rgba(0,0,0,0.12); */
+    border-radius: 0px;
+    margin: 15px 0px;
+    padding: 10px;
+    text-align: left;
+    /* background: #b01e3980; */
+    margin-top: 0px;
+}
+
+
+
+
+
+
+/*Overlay*/
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition:opacity 3ms ease;
+    z-index: 5;
+}
+#overlay.active{
+    opacity: 1;
+    display: block; 
+}
+
